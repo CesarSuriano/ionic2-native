@@ -3,12 +3,16 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CameraPage } from '../pages/camera/camera';
+import { NetworkPage } from '../pages/network/network';
+import { NotificationPage } from '../pages/notification/notification';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    CameraPage
+    CameraPage,
+    NetworkPage,
+    NotificationPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -17,7 +21,9 @@ import { CameraPage } from '../pages/camera/camera';
   entryComponents: [
     MyApp,
     HomePage,
-    CameraPage
+    CameraPage,
+    NetworkPage,
+    NotificationPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

@@ -4,13 +4,15 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { CameraPage } from '../pages/camera/camera';
 import { HomePage } from '../pages/home/home';
+import { NetworkPage } from '../pages/network/network';
+import { NotificationPage } from '../pages/notification/notification';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   pages: Array<any>;
-  rootPage = CameraPage; 
+  rootPage = HomePage; 
 
   constructor(platform: Platform, public menu: MenuController) {
     StatusBar.overlaysWebView(true); // let status bar overlay webview
@@ -18,7 +20,9 @@ export class MyApp {
     StatusBar.backgroundColorByHexString('#2C64C2');
     this.pages=[
       {title: 'Home', component: HomePage},
-      {title: 'Camera', component: CameraPage}
+      {title: 'Camera', component: CameraPage},
+      {title: 'Network', component: NetworkPage},
+      {title: 'Notificacao', component: NotificationPage},
     ];
 
     platform.ready().then(() => {

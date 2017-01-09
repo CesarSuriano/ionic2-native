@@ -1,5 +1,5 @@
 <!--
-  Generated template for the Camera page.
+  Generated template for the Notification page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
@@ -11,7 +11,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Câmera
+      Notificação
     </ion-title>
   </ion-navbar>
 
@@ -19,6 +19,5 @@
 
 
 <ion-content padding>
-  <button ion-button block (click)="takeFoto()">Foto</button>
-  <img src="{{image}}" [hidden]="!image">
+  <button ion-button (click)="send()">Notificação</button>
 </ion-content>
