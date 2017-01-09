@@ -6,6 +6,7 @@ import { CameraPage } from '../pages/camera/camera';
 import { HomePage } from '../pages/home/home';
 import { NetworkPage } from '../pages/network/network';
 import { NotificationPage } from '../pages/notification/notification';
+import { BarcodePage } from '../pages/barcode/barcode';
 
 @Component({
   templateUrl: 'app.html'
@@ -23,6 +24,7 @@ export class MyApp {
       {title: 'Camera', component: CameraPage},
       {title: 'Network', component: NetworkPage},
       {title: 'Notificacao', component: NotificationPage},
+      {title: 'Codigo de barras', component: BarcodePage},
     ];
 
     platform.ready().then(() => {

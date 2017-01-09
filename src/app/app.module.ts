@@ -5,6 +5,7 @@ import { HomePage } from '../pages/home/home';
 import { CameraPage } from '../pages/camera/camera';
 import { NetworkPage } from '../pages/network/network';
 import { NotificationPage } from '../pages/notification/notification';
+import { BarcodePage } from '../pages/barcode/barcode';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { NotificationPage } from '../pages/notification/notification';
     HomePage,
     CameraPage,
     NetworkPage,
-    NotificationPage
+    NotificationPage,
+    BarcodePage
+    
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,7 +26,8 @@ import { NotificationPage } from '../pages/notification/notification';
     HomePage,
     CameraPage,
     NetworkPage,
-    NotificationPage
+    NotificationPage,
+    BarcodePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

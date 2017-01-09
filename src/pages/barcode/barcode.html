@@ -7,12 +7,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>barcode</ion-title>
+    <ion-title>Código de Barras</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <button ion-button (click)="scan()">Código</button>
 
+  <p>{{ barcodeData | json }}</p>
 </ion-content>
